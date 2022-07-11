@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>arithmatic operation</title>
+<script type="text/javascript">
+var n1,n2,r;
+function add(){
+n1=document.myform.n1.value;
+n2=document.myform.n2.value;
+n1=parseFloat(n1);
+n2=parseFloat(n2);
+r=nl+n2;
+document.myform.result.value=r;
+}
+function sub(){
+n1=document.myform.n1.value;
+n2=document.myform.n2.value;
+n1=parseFloat(n1);
+n2=parseFloat(n2);
+r=n1-n2;
+document.myform.result.value=r;
+}
+function mul(){
+n1=document.myform.n1.value;
+n2=document.myform.n2.value;
+n1=parseFloat(n1);
+n2=parseFloat(n2);
+r=n1*n2;
+document.myform.result.value=r;
+}
+function div(){
+n1=document.myform.n1.value;
+n2=document.myform.n2.value;
+n1=parseFloat(n1);
+n2=parseFloat(n2);
+r=n1/n2;
+document.myform.result.value=r;
+}
+</script> </head>
+<body>
+<form name="myform">
+<h1 align="center">arithmatic operations</h1> 
+<hr color="red">
+<center><u>enter a number in each text box</u><br><br>
+number 1:<input type="text" name="n1" value=""><br><br>
+number 2:<input type="text" name="n2" value=""><br><br>
+<input type="button" value="add" onClick"add()">
+<input type="button" value="substraction" onClick="sub()">
+<input type="button" value="multiply" onClick"mul()">
+<input type="button" value="division" onClick="div()"> <br><br>
+<font color="red">
+result is:
+<input type="text" name="result" value="">
+</center>
+</font>
+</form>
+</body>
+</html> 
